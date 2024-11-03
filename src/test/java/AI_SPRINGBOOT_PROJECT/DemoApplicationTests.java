@@ -1,4 +1,4 @@
-package AI_SPRINGBOOT_PROJECT.demo;
+package AI_SPRINGBOOT_PROJECT;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
