@@ -1,0 +1,16 @@
+services:
+  mongodb:
+    image: 'mongo:latest'
+    environment:
+      - 'MONGO_INITDB_DATABASE=mydatabase'
+      - 'MONGO_INITDB_ROOT_PASSWORD=secret'
+      - 'MONGO_INITDB_ROOT_USERNAME=root'
+    ports:
+      - '27017:27017'  # Port mapping for external access if needed
+
+  ollama:
+    image: 'ollama/ollama:latest'
+    ports:
+      - '11434:11434'  # Port mapping for external access if needed
+    environment:
+      - SPRING_AI_OPENAI_API_KEY=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
